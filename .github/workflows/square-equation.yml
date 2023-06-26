@@ -2,7 +2,7 @@ name: square equation unittest and coverage
 
 on:
   push:
-    branches: ["unittest"]
+    branches: ["square_equation_UnitTest"]
 
 jobs:
   build:
