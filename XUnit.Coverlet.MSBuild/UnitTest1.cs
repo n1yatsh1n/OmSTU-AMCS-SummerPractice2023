@@ -30,8 +30,8 @@ public class SquareEquationLib_isUnite
     }
 
     [Theory]
-    [InlineData(1, 4, 3, new double[]{-3, -1})]
-    [InlineData(1, -8, 12, new double[]{6, 2})]
+    [InlineData(1, 4, 3, new double[]{-1, -3})]
+    [InlineData(1, -8, 12, new double[]{2, 6})]
     public void CheckingTwoRoots(double a, double b, double c, double[] roots)
     {
         double[] actual = SquareEquationLib.SquareEquation.Solve(a, b, c);
