@@ -2,7 +2,7 @@ name: square equation unittest and coverage
 
 on:
   push:
-    branches: ["square_equation_UnitTest"]
+    branches: ["square_equation_BDD"]
 
 jobs:
   build:
@@ -24,3 +24,6 @@ jobs:
         
       - name: Unittest and coverage
         run: dotnet test XUnit.Coverlet.MSBuild /p:CollectCoverage=true /p:ThresholdType=line /p:Threshold=100
+        
+      - name: BDD
+        run: cd XUnit.Tests && dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
