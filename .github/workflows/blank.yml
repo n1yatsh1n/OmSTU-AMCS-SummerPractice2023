@@ -2,7 +2,7 @@ name: spaceBattleTests
 
 on:
   push:
-    branches: [ "space_battle" ]
+    branches: [ "Space-battle-with-fuel-and-rotation" ]
 
   workflow_dispatch:
 jobs:
