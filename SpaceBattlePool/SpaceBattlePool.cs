@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Pool
+namespace SpaceBattlePool
 {
     public class Pool<T> where T : new()
     {
